@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Informasi Barang</title>
+    <link rel="stylesheet" href="style_barang.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Informasi Barang</h1>
+        <div class="menu">
+            <button><a href="data_barang.html">Data Barang</a></button>
+            <button><a href="data_transaksi.html">Data Transaksi</a></button>
+            <button><a href="data_pelanggan.html">Data Pelanggan</a></button>
+        </div>
+        <div class="form">
+            <label for="kode">Kode Barang</label>
+            <input type="text" id="kode" placeholder="Masukkan kode barang">
+            <label for="nama">Nama Barang</label>
+            <input type="text" id="nama" placeholder="Masukkan nama barang">
+            <label for="harga">Harga Barang</label>
+            <input type="number" id="harga" placeholder="Masukkan harga barang">
+            <label for="satuan">Satuan</label>
+            <select id="satuan">
+                <option value="Lusin">Lusin</option>
+                <option value="Gross">Gross</option>
+                <option value="Kodi">Kodi</option>
+            </select>
+            <button id="proses">Proses</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="table">
+            <table id="output">
+                <tr>
+                    <th>Kode Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Harga Barang</th>
+                    <th>Satuan</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script_barang.js"></script>
+</body>
+</html>

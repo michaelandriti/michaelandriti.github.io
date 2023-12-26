@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Informasi Barang</title>
+    <link rel="stylesheet" href="style_pelanggan.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Informasi Barang</h1>
+        <div class="menu">
+            <button><a href="data_barang.html">Data Barang</a></button>
+            <button><a href="data_transaksi.html">Data Transaksi</a></button>
+            <button><a href="data_pelanggan.html">Data Pelanggan</a></button>
+        </div>
+        <div class="form">
+            <label for="kode_pelanggan">Kode Pelanggan</label>
+            <input type="text" id="kode_pelanggan" placeholder="Masukkan kode pelanggan">
+            <label for="nama_pelanggan">Nama Pelanggan</label>
+            <input type="text" id="nama_pelanggan" placeholder="Masukkan nama pelanggan">
+            <label for="telp">No Telp</label>
+            <input type="text" id="telp" placeholder="Masukkan nomor telepon">
+            <button id="proses">Proses</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="table">
+            <table id="output">
+                <tr>
+                    <th>Kode Pelanggan</th>
+                    <th>Nama Pelanggan</th>
+                    <th>No Telp</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script_pelanggan.js"></script>
+</body>
+</html>
